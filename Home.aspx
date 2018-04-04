@@ -29,10 +29,10 @@
                         fromDate: new Date()
                     }
                 }, function (results) {
-                    vehicles = results.map(function (vehicle) {
+                    user = results.user(function (user) {
                         return {
-                            name: vehicle.name,
-                            id: vehicle.id
+                            name: user.name,
+                            id: user.id
                         };
                     });
                     finishedCallback();
